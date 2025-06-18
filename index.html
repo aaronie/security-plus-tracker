@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professor Messer SY0-701 Security+ Progress Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Professor Messer SY0-701 Security+ Video Progress Tracker</h1>
+
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+        <div class="progress-text">
+            <span id="completedCount">0</span>/<span id="totalVideos">0</span> videos completed (<span id="percentage">0%</span>)
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Section</th>
+                <th>Video Title</th>
+                <th>Run Time</th>
+                <th>Description</th>
+                <th>Completed</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="section-header" colspan="5">Section 0: The SY0-701 CompTIA Security+ Exam</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>How to Pass Your SY0-701 Security+ Exam</td>
+                <td>10:06</td>
+                <td>This video explains the certification requirements and the best study methods for the Security+ exam, which is a popular entry-level certification for IT professionals.</td>
+                <td><input type="checkbox" id="video-0-1"></td>
+            </tr>
+
+            <tr>
+                <td class="section-header" colspan="5">Section 1: General Security Concepts</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Security Controls</td>
+                <td>11:48</td>
+                <td>This video covers the categories of common security controls that are used to monitor, alert, and recover from attacks.</td>
+                <td><input type="checkbox" id="video-1-1"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>The CIA Triad</td>
+                <td>5:17</td>
+                <td>This video details the foundational goals of IT security, specifically confidentiality, integrity, and availability.</td>
+                <td><input type="checkbox" id="video-1-2"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Non-repudiation</td>
+                <td>7:57</td>
+                <td>Information on hashing, digital signatures, and the function of cryptography in non-repudiation.</td>
+                <td><input type="checkbox" id="video-1-3"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Authentication, Authorization, and Accounting</td>
+                <td>9:03</td>
+                <td>This video explains the AAA process, an important part of network security.</td>
+                <td><input type="checkbox" id="video-1-4"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Gap Analysis</td>
+                <td>6:44</td>
+                <td>Learn how a security gap analysis can be used to improve network security.</td>
+                <td><input type="checkbox" id="video-1-5"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Zero Trust</td>
+                <td>10:04</td>
+                <td>This video discusses best practices for implementing a zero-trust strategy to enhance an organization's data security.</td>
+                <td><input type="checkbox" id="video-1-6"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Physical Security</td>
+                <td>8:17</td>
+                <td>Learn about physical security devices and techniques used to protect computing systems.</td>
+                <td><input type="checkbox" id="video-1-7"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Deception and Disruption</td>
+                <td>4:30</td>
+                <td>This video teaches how to use deception and disruption to protect networks by fooling attackers into revealing their methods.</td>
+                <td><input type="checkbox" id="video-1-8"></td>
+            </tr>
+
+            <tr>
+                <td class="section-header" colspan="5">Section 1.3 – Change Management</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Change Management</td>
+                <td>11:22</td>
+                <td>This video explains how IT professionals manage the process of updating, modifying, and changing devices.</td>
+                <td><input type="checkbox" id="video-1-3-1"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Technical Change Management</td>
+                <td>10:54</td>
+                <td>This video further details how IT professionals manage technical changes to devices.</td>
+                <td><input type="checkbox" id="video-1-3-2"></td>
+            </tr>
+
+            <tr>
+                <td class="section-header" colspan="5">Section 1.4 – Cryptographic Solutions</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Public Key Infrastructure</td>
+                <td>9:08</td>
+                <td>This video covers symmetric encryption, asymmetric encryption, key pair generation, and other foundational public key infrastructure technologies.</td>
+                <td><input type="checkbox" id="video-1-4-1"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Encrypting Data</td>
+                <td>9:48</td>
+                <td>Learn about various encryption techniques used to secure data, including database encryption, transport encryption, and cryptographic keys.</td>
+                <td><input type="checkbox" id="video-1-4-2"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Key Exchange</td>
+                <td>3:39</td>
+                <td>This video explains how a symmetric key can be derived from a public and private key pair for secure real-time encryption.</td>
+                <td><input type="checkbox" id="video-1-4-3"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Encryption Technologies</td>
+                <td>6:53</td>
+                <td>Learn about HSMs, TPMs, secure enclaves, and other encryption technologies that provide secure key storage, cryptographic functions, and data privacy.</td>
+                <td><input type="checkbox" id="video-1-4-4"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Obfuscation</td>
+                <td>8:00</td>
+                <td>This video discusses how obfuscation, including steganography, tokenization, and data masking, can be used to hide information in IT security.</td>
+                <td><input type="checkbox" id="video-1-4-5"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Hashing and Digital Signatures</td>
+                <td>10:24</td>
+                <td>Learn how hashes are created and how digital signatures are used to provide integrity, authentication, and non-repudiation.</td>
+                <td><input type="checkbox" id="video-1-4-6"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Blockchain Technology</td>
+                <td>2:22</td>
+                <td>This video explains the underlying mechanics of blockchain technology, which is the foundation of cryptocurrency and has other applications.</td>
+                <td><input type="checkbox" id="video-1-4-7"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Certificates</td>
+                <td>14:38</td>
+                <td>Learn about digital certificates, certificate signing requests, key revocation, OCSP stapling, and their role in providing trust when accessing devices or services.</td>
+                <td><input type="checkbox" id="video-1-4-8"></td>
+            </tr>
+
+            <tr>
+                <td class="section-header" colspan="5">Section 2: Threats, Vulnerabilities, and Mitigations</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Threat Actors</td>
+                <td>10:23</td>
+                <td>This video describes different types of attackers, including those from nation states, organized crime, and shadow IT.</td>
+                <td><input type="checkbox" id="video-2-1"></td>
+            </tr>
+
+            <tr>
+                <td class="section-header" colspan="5">Section 2.2 – Threat Vectors and Attack Surfaces</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Common Threat Vectors</td>
+                <td>17:14</td>
+                <td>Learn about various methods attackers use to gain system access, such as messages, images, files, and default credentials.</td>
+                <td><input type="checkbox" id="video-2-2-1"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Phishing</td>
+                <td>6:32</td>
+                <td>This video explains different phishing techniques and demonstrates a real-world example.</td>
+                <td><input type="checkbox" id="video-2-2-2"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Impersonation</td>
+                <td>5:52</td>
+                <td>Learn about popular impersonation and fraud-based attacks used by attackers.</td>
+                <td><input type="checkbox" id="video-2-2-3"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Watering Hole Attacks</td>
+                <td>4:12</td>
+                <td>This video explains how attackers use watering hole attacks to target companies outside their network.</td>
+                <td><input type="checkbox" id="video-2-2-4"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Other Social Engineering Attacks</td>
+                <td>3:29</td>
+                <td>Learn about misinformation campaigns and brand impersonation as social engineering techniques.</td>
+                <td><input type="checkbox" id="video-2-2-5"></td>
+            </tr>
+
+            <tr>
+                <td class="section-header" colspan="5">Section 2.3 – Types of Vulnerabilities</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Memory Injections</td>
+                <td>2:39</td>
+                <td>This video explains how memory and DLL injections are used by attackers to gain elevated access by manipulating RAM.</td>
+                <td><input type="checkbox" id="video-2-3-1"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Buffer Overflows</td>
+                <td>3:37</td>
+                <td>Learn how buffer overflows in poorly written applications can be exploited to gain remote system access.</td>
+                <td><input type="checkbox" id="video-2-3-2"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Race Conditions</td>
+                <td>4:58</td>
+                <td>This video explains how attackers can exploit race conditions in applications that perform multiple transactions simultaneously.</td>
+                <td><input type="checkbox" id="video-2-3-3"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Malicious Updates</td>
+                <td>5:45</td>
+                <td>Learn how attackers can use automated updates in operating systems and applications to gain system access.</td>
+                <td><input type="checkbox" id="video-2-3-4"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Operating System Vulnerabilities</td>
+                <td>4:09</td>
+                <td>This video discusses how attackers exploit OS vulnerabilities and how to protect systems from intrusion.</td>
+                <td><input type="checkbox" id="video-2-3-5"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>SQL Injection</td>
+                <td>5:09</td>
+                <td>Learn about SQL injections and how attackers use them to gain access to data.</td>
+                <td><input type="checkbox" id="video-2-3-6"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Cross-site Scripting</td>
+                <td>8:34</td>
+                <td>This video explains how browser vulnerabilities can provide attackers with access to third-party websites.</td>
+                <td><input type="checkbox" id="video-2-3-7"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Hardware Vulnerabilities</td>
+                <td>6:27</td>
+                <td>Learn how firmware, end-of-life announcements, and legacy platforms can pose security risks.</td>
+                <td><input type="checkbox" id="video-2-3-8"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Virtualization Vulnerabilities</td>
+                <td>5:29</td>
+                <td>This video discusses how VM escapes and resource reuse can be maliciously used by attackers targeting virtual machine managers.</td>
+                <td><input type="checkbox" id="video-2-3-9"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Cloud-specific Vulnerabilities</td>
+                <td>4:06</td>
+                <td>Learn about denial of service, authentication bypass, directory traversal, and other attacks against cloud-based applications.</td>
+                <td><input type="checkbox" id="video-2-3-10"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Supply Chain Vulnerabilities</td>
+                <td>9:12</td>
+                <td>This video explains how the supply chain can be used as an attack vector against organizations.</td>
+                <td><input type="checkbox" id="video-2-3-11"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Misconfiguration Vulnerabilities</td>
+                <td>7:09</td>
+                <td>Learn about various ways misconfigurations can weaken network security.</td>
+                <td><input type="checkbox" id="video-2-3-12"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Mobile Device Vulnerabilities</td>
+                <td>3:23</td>
+                <td>This video covers jailbreaking, rooting, and sideloading as mobile device vulnerabilities.</td>
+                <td><input type="checkbox" id="video-2-3-13"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Zero-day Vulnerabilities</td>
+                <td>3:02</td>
+                <td>Learn about zero-day attacks and how to prepare and respond to them.</td>
+                <td><input type="checkbox" id="video-2-3-14"></td>
+            </tr>
+
+            <tr>
+                <td class="section-header" colspan="5">Section 2.4 – Indicators of Malicious Activity</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>An Overview of Malware</td>
+                <td>6:06</td>
+                <td>This video explains how malware and ransomware are used in cybersecurity attacks.</td>
+                <td><input type="checkbox" id="video-2-4-1"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Viruses and Worms</td>
+                <td>5:54</td>
+                <td>Learn about the differences between viruses and worms, and how fileless viruses attack from RAM.</td>
+                <td><input type="checkbox" id="video-2-4-2"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Spyware and Bloatware</td>
+                <td>4:21</td>
+                <td>This video describes the operation of common spyware and bloatware designed to track, monitor, or overwhelm systems.</td>
+                <td><input type="checkbox" id="video-2-4-3"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Other Malware Types</td>
+                <td>7:32</td>
+                <td>Learn about keyloggers, logic bombs, and rootkits.</td>
+                <td><input type="checkbox" id="video-2-4-4"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Physical Attacks</td>
+                <td>4:04</td>
+                <td>This video covers brute force attacks, RFID cloning, and environmental attacks that exploit physical vulnerabilities.</td>
+                <td><input type="checkbox" id="video-2-4-5"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Denial of Service</td>
+                <td>6:07</td>
+                <td>Learn about various forms of denial of service attacks aimed at disabling network services.</td>
+                <td><input type="checkbox" id="video-2-4-6"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>DNS Attacks</td>
+                <td>8:57</td>
+                <td>This video explains DNS spoofing, domain hijacking, and URL hijacking as DNS attack vectors.</td>
+                <td><input type="checkbox" id="video-2-4-7"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Wireless Attacks</td>
+                <td>7:55</td>
+                <td>Learn about deauthentication attacks, RF jamming, and other wireless network vulnerabilities.</td>
+                <td><input type="checkbox" id="video-2-4-8"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>On-path Attacks</td>
+                <td>5:30</td>
+                <td>This video explains the processes used to implement an on-path attack to intercept and redirect network traffic.</td>
+                <td><input type="checkbox" id="video-2-4-9"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Replay Attacks</td>
+                <td>5:45</td>
+                <td>This video also explains the processes used to implement an on-path attack, specifically focusing on replay attacks.</td>
+                <td><input type="checkbox" id="video-2-4-10"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Malicious Code</td>
+                <td>3:40</td>
+                <td>Learn about malicious code and its use in gaining access to networks.</td>
+                <td><input type="checkbox" id="video-2-4-11"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Application Attacks</td>
+                <td>11:48</td>
+                <td>This video covers privilege escalation, directory traversal, and other application-based attack vectors.</td>
+                <td><input type="checkbox" id="video-2-4-12"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Cryptographic Attacks</td>
+                <td>9:31</td>
+                <td>Learn about downgrade attacks, SSL stripping, and hash collisions resulting from poorly implemented cryptography.</td>
+                <td><input type="checkbox" id="video-2-4-13"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Password Attacks</td>
+                <td>7:15</td>
+                <td>This video explains how attackers obtain credentials using password spraying and brute force.</td>
+                <td><input type="checkbox" id="video-2-4-14"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Indicators of Compromise</td>
+                <td>10:59</td>
+                <td>This video explains the processes used to implement an on-path attack, focusing on indicators of compromise.</td>
+                <td><input type="checkbox" id="video-2-4-15"></td>
+            </tr>
+
+            <tr>
+                <td class="section-header" colspan="5">Section 2.5 – Mitigation Techniques</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Segmentation and Access Control</td>
+                <td>6:06</td>
+                <td>Learn about access control lists, application allow lists, and the security advantages of network segmentation.</td>
+                <td><input type="checkbox" id="video-2-5-1"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Mitigation Techniques</td>
+                <td>6:51</td>
+                <td>This video covers patching, encryption, monitoring, least privilege, and other methods to prevent or reduce cybersecurity attack impact.</td>
+                <td><input type="checkbox" id="video-2-5-2"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Hardening Techniques</td>
+                <td>12:11</td>
+                <td>Learn about encryption, open ports, default passwords, and other techniques for making systems more difficult to exploit.</td>
+                <td><input type="checkbox" id="video-2-5-3"></td>
+            </tr>
+
+            <tr>
+                <td class="section-header" colspan="5">Section 3: Security Architecture</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Cloud Infrastructures</td>
+                <td>9:56</td>
+                <td>This video discusses infrastructure as code, serverless architectures, APIs, and security challenges in the cloud.</td>
+                <td><input type="checkbox" id="video-3-1"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Network Infrastructure Concepts</td>
+                <td>6:56</td>
+                <td>Learn about logical segmentation and secure deployment of software-defined networking in cloud-based network infrastructures.</td>
+                <td><input type="checkbox" id="video-3-2"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Other Infrastructure Concepts</td>
+                <td>14:24</td>
+                <td>This video covers virtualization, containerization, Internet of Things, embedded systems, and their security implications.</td>
+                <td><input type="checkbox" id="video-3-3"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Infrastructure Considerations</td>
+                <td>13:48</td>
+                <td>Learn about resilience, cost, responsiveness, scalability, and other considerations when designing a network.</td>
+                <td><input type="checkbox" id="video-3-4"></td>
+            </tr>
+
+            <tr>
+                <td class="section-header" colspan="5">Section 3.2 – Applying Security Principles</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Secure Infrastructures</td>
+                <td>5:54</td>
+                <td>This video discusses security zones, attack surfaces, and connectivity for securely placing services.</td>
+                <td><input type="checkbox" id="video-3-2-1"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Intrusion Prevention</td>
+                <td>5:14</td>
+                <td>Learn about IPS failure modes, device connections, and differences between active and passive monitoring for blocking attacks.</td>
+                <td><input type="checkbox" id="video-3-2-2"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Network Appliances</td>
+                <td>11:56</td>
+                <td>This video covers jump servers, application proxies, load balancing, sensors, collectors, and other network appliances for securing a network.</td>
+                <td><input type="checkbox" id="video-3-2-3"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Port Security</td>
+                <td>3:50</td>
+                <td>Learn about EAP, IEEE 802.1X, and other best practices for securing network interfaces.</td>
+                <td><input type="checkbox" id="video-3-2-4"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Firewall Types</td>
+                <td>8:00</td>
+                <td>This video discusses UTMs, NGFWs, and WAFs as different types of firewalls for securing network flows.</td>
+                <td><input type="checkbox" id="video-3-2-5"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Secure Communication</td>
+                <td>9:55</td>
+                <td>Learn about different VPN technologies, SD-WAN features, and SASE solutions for securing network packets.</td>
+                <td><input type="checkbox" id="video-3-2-6"></td>
+            </tr>
+
+            <tr>
+                <td class="section-header" colspan="5">Section 3.3 – Protecting Data</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Data Types and Classifications</td>
+                <td>5:54</td>
+                <td>This video covers different data types, data classifications, and classifying sensitive data.</td>
+                <td><input type="checkbox" id="video-3-3-1"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>States of Data</td>
+                <td>6:07</td>
+                <td>Learn about data at rest, data in transit, data in use, and their security implications.</td>
+                <td><input type="checkbox" id="video-3-3-2"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Protecting Data</td>
+                <td>14:28</td>
+                <td>This video discusses geographic restrictions, encryption, hashing, obfuscation, tokenization, and other methods for data protection.</td>
+                <td><input type="checkbox" id="video-3-3-3"></td>
+            </tr>
+
+            <tr>
+                <td class="section-header" colspan="5">Section 3.4 – Resiliency and Recovery</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Resiliency</td>
+                <td>9:42</td>
+                <td>Learn about server clustering, load balancing, site resiliency, multi-cloud systems, and maintaining network uptime and availability.</td>
+                <td><input type="checkbox" id="video-3-4-1"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Capacity Planning</td>
+                <td>3:53</td>
+                <td>This video explains how to evaluate people, technology, and infrastructure to provide proper network resource capacity.</td>
+                <td><input type="checkbox" id="video-3-4-2"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Recovery Testing</td>
+                <td>5:18</td>
+                <td>Learn how organizations test their disaster recovery plans.</td>
+                <td><input type="checkbox" id="video-3-4-3"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Backups</td>
+                <td>12:16</td>
+                <td>This video covers backup frequency, encryption, snapshots, replication, and their role as recovery methods.</td>
+                <td><input type="checkbox" id="video-3-4-4"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Power Resiliency</td>
+                <td>4:02</td>
+                <td>Learn how UPS technologies and generators maintain a stable power source for computing systems.</td>
+                <td><input type="checkbox" id="video-3-4-5"></td>
+            </tr>
+
+            <tr>
+                <td class="section-header" colspan="5">Section 4: Security Operations</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Secure Baselines</td>
+                <td>4:11</td>
+                <td>This video discusses establishing, deploying, and maintaining security baselines for application environments.</td>
+                <td><input type="checkbox" id="video-4-1"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Hardening Targets</td>
+                <td>10:11</td>
+                <td>Learn about hardening mobile devices, servers, embedded systems, IoT devices, and other systems beyond default configurations.</td>
+                <td><input type="checkbox" id="video-4-2"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Securing Wireless and Mobile</td>
+                <td>8:58</td>
+                <td>This video covers site surveys, mobile device management, BYOD, COPE, and other strategies for wireless and mobile system security.</td>
+                <td><input type="checkbox" id="video-4-3"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Wireless Security Settings</td>
+                <td>10:54</td>
+                <td>Learn about wireless encryption protocols, the AAA framework, and authentication options like RADIUS, 802.1X, and EAP for wireless network security.</td>
+                <td><input type="checkbox" id="video-4-4"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Application Security</td>
+                <td>8:26</td>
+                <td>This video discusses input validation, secure cookies, code signing, sandboxing, and other best practices for security in application development.</td>
+                <td><input type="checkbox" id="video-4-5"></td>
+            </tr>
+
+            <tr>
+                <td class="section-header" colspan="5">Section 4.2 – Asset Management</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Asset Management</td>
+                <td>8:37</td>
+                <td>Learn about best practices for procurement, asset tracking, media sanitization, and physical destruction in IT security asset management.</td>
+                <td><input type="checkbox" id="video-4-2-1"></td>
+            </tr>
+
+            <tr>
+                <td class="section-header" colspan="5">Section 4.3 – Vulnerability Management</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Vulnerability Scanning</td>
+                <td>7:45</td>
+                <td>This video covers vulnerability scans, static code analyzers, and fuzzing used by security researchers to identify vulnerabilities.</td>
+                <td><input type="checkbox" id="video-4-3-1"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Threat Intelligence</td>
+                <td>4:46</td>
+                <td>Learn about OSINT, third-parties, information sharing, the dark web, and other threat intelligence gathering techniques.</td>
+                <td><input type="checkbox" id="video-4-3-2"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Penetration Testing</td>
+                <td>6:21</td>
+                <td>This video discusses rules of engagement, exploitation processes, and responsible disclosure programs in penetration tests.</td>
+                <td><input type="checkbox" id="video-4-3-3"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Analyzing Vulnerabilities</td>
+                <td>10:29</td>
+                <td>Learn about vulnerability databases, classification, exposure factor, risk tolerance, and other aspects of vulnerability analysis.</td>
+                <td><input type="checkbox" id="video-4-3-4"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Vulnerability Remediation</td>
+                <td>8:45</td>
+                <td>This video covers patching, insurance, segmentation, compensating controls, and other methods for mitigating identified vulnerabilities.</td>
+                <td><input type="checkbox" id="video-4-3-5"></td>
+            </tr>
+
+            <tr>
+                <td class="section-header" colspan="5">Section 4.4 – Security Monitoring</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Security Monitoring</td>
+                <td>10:27</td>
+                <td>Learn about log aggregation, scanning, reporting, alerting, and other methods for monitoring and reacting to security events.</td>
+                <td><input type="checkbox" id="video-4-4-1"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Security Tools</td>
+                <td>14:06</td>
+                <td>This video covers Security Content Automation Protocol (SCAP), secure baselines, SIEMs, and other tools for protecting network resources.</td>
+                <td><input type="checkbox" id="video-4-4-2"></td>
+            </tr>
+
+            <tr>
+                <td class="section-header" colspan="5">Section 4.5 – Enterprise Security</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Firewalls</td>
+                <td>11:31</td>
+                <td>Learn about next-generation firewalls, firewall rules, screen subnets, and their role in security protection strategies.</td>
+                <td><input type="checkbox" id="video-4-5-1"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Web Filtering</td>
+                <td>10:00</td>
+                <td>This video discusses content filtering, URL scanning, proxies, DNS filtering, and other filtering methods for protection against attacks.</td>
+                <td><input type="checkbox" id="video-4-5-2"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Operating System Security</td>
+                <td>3:22</td>
+                <td>Learn about Active Directory, Group Policy, and Security-Enhanced Linux (SELinux) for securing operating systems.</td>
+                <td><input type="checkbox" id="video-4-5-3"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Secure Protocols</td>
+                <td>4:47</td>
+                <td>This video covers protocol and port selection, transport methods, and VPN tunnels for encrypting network traffic.</td>
+                <td><input type="checkbox" id="video-4-5-4"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Email Security</td>
+                <td>7:05</td>
+                <td>Learn about SPF (Secure Policy Framework), DKIM (Domain Keys Identified Mail), and DMARC (Domain-based Message Authentication, Reporting, and Conformance) for email security.</td>
+                <td><input type="checkbox" id="video-4-5-5"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Monitoring Data</td>
+                <td>7:25</td>
+                <td>This video discusses data loss prevention, file integrity monitoring, USB blocking, and other methods for monitoring data.</td>
+                <td><input type="checkbox" id="video-4-5-6"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Endpoint Security</td>
+                <td>9:25</td>
+                <td>Learn about posture assessments, health checks, EDR (Endpoint Detection and Response), and other endpoint security measures.</td>
+                <td><input type="checkbox" id="video-4-5-7"></td>
+            </tr>
+
+            <tr>
+                <td class="section-header" colspan="5">Section 4.6 – Identity and Access Management</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Identity and Access Management</td>
+                <td>12:46</td>
+                <td>This video covers IAM, account provisioning, permission assignments, single sign-on, and matching permissions to individuals.</td>
+                <td><input type="checkbox" id="video-4-6-1"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Access Controls</td>
+                <td>7:49</td>
+                <td>Learn about least privilege, access control types, time-of-day restrictions, and various ways to provide authorization.</td>
+                <td><input type="checkbox" id="video-4-6-2"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Multifactor Authentication</td>
+                <td>4:29</td>
+                <td>This video explains something you know, something you have, something you are, and somewhere you are as multifactor authentication methods.</td>
+                <td><input type="checkbox" id="video-4-6-3"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Password Security</td>
+                <td>6:22</td>
+                <td>Learn about password complexity, password managers, passwordless authentication, and other ways to increase password security.</td>
+                <td><input type="checkbox" id="video-4-6-4"></td>
+            </tr>
+
+            <tr>
+                <td class="section-header" colspan="5">Section 4.7 – Automation and Orchestration</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Scripting and Automation</td>
+                <td>8:20</td>
+                <td>This video discusses automation benefits, cases for automation, and scripting considerations for streamlined security.</td>
+                <td><input type="checkbox" id="video-4-7-1"></td>
+            </tr>
+
+            <tr>
+                <td class="section-header" colspan="5">Section 4.8 – Incident Response</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Incident Response</td>
+                <td>9:14</td>
+                <td>Learn about preparation, isolation, recovery, and other steps for properly addressing security incidents.</td>
+                <td><input type="checkbox" id="video-4-8-1"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Incident Planning</td>
+                <td>6:50</td>
+                <td>This video covers tabletop exercises, simulations, root cause analysis, and their role in refining the incident response process.</td>
+                <td><input type="checkbox" id="video-4-8-2"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Digital Forensics</td>
+                <td>9:54</td>
+                <td>Learn about legal hold, chain of custody, event reporting, e-discovery, and other aspects of digital forensics data collection.</td>
+                <td><input type="checkbox" id="video-4-8-3"></td>
+            </tr>
+
+            <tr>
+                <td class="section-header" colspan="5">Section 4.9 – Security Data Sources</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Log Data</td>
+                <td>13:41</td>
+                <td>This video discusses logs from firewalls, applications, endpoints, operating systems, and other sources that provide records of data flows and dispositions.</td>
+                <td><input type="checkbox" id="video-4-9-1"></td>
+            </tr>
+
+            <tr>
+                <td class="section-header" colspan="5">Section 5: Security Program Management and Oversight</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Security Policies</td>
+                <td>11:02</td>
+                <td>Learn about information security policies, acceptable use policies, business continuity, and their role as the foundation of security processes.</td>
+                <td><input type="checkbox" id="video-5-1"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Security Standards</td>
+                <td>5:36</td>
+                <td>This video covers standards for password policies, access control, physical security, and other administratively managed security parameters.</td>
+                <td><input type="checkbox" id="video-5-2"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Security Procedures</td>
+                <td>7:02</td>
+                <td>Learn about change management, onboarding, offboarding, playbooks, and other procedures for controlling data and services.</td>
+                <td><input type="checkbox" id="video-5-3"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Security Considerations</td>
+                <td>4:51</td>
+                <td>This video discusses regulatory requirements, legal issues, industry standards, and other requirements associated with IT security.</td>
+                <td><input type="checkbox" id="video-5-4"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Data Roles and Responsibilities</td>
+                <td>2:27</td>
+                <td>Learn about data owners, data controllers, data processors, and their responsibilities in data management.</td>
+                <td><input type="checkbox" id="video-5-5"></td>
+            </tr>
+
+            <tr>
+                <td class="section-header" colspan="5">Section 5.2 – Risk Management</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Risk Management</td>
+                <td>3:30</td>
+                <td>This video covers risk assessments, ad hoc assessments, and recurring assessments for understanding potential organizational risks.</td>
+                <td><input type="checkbox" id="video-5-2-1"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Risk Analysis</td>
+                <td>9:13</td>
+                <td>Learn about risk assessments, risk appetite, risk tolerance, and risk registers for managing risk.</td>
+                <td><input type="checkbox" id="video-5-2-2"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Risk Management Strategies</td>
+                <td>3:12</td>
+                <td>This video discusses transferring risk, accepting risk, avoiding risk, and other options for managing risk.</td>
+                <td><input type="checkbox" id="video-5-2-3"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Business Impact Analysis</td>
+                <td>2:55</td>
+                <td>Learn how to determine recovery time objective, recovery point objective, mean time to repair, and mean time between failures after a security event.</td>
+                <td><input type="checkbox" id="video-5-2-4"></td>
+            </tr>
+
+            <tr>
+                <td class="section-header" colspan="5">Section 5.3 – Third-party Risk</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Third-party Risk Assessment</td>
+                <td>11:36</td>
+                <td>This video covers right-to-audit clauses, supply chain analysis, vendor monitoring, and other methods for mitigating third-party risk.</td>
+                <td><input type="checkbox" id="video-5-3-1"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Agreement Types</td>
+                <td>5:19</td>
+                <td>Learn about service level agreements, memorandums of understanding, non-disclosure agreements, and their importance in risk management.</td>
+                <td><input type="checkbox" id="video-5-3-2"></td>
+            </tr>
+
+            <tr>
+                <td class="section-header" colspan="5">Section 5.4 – Security Compliance</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Compliance</td>
+                <td>8:06</td>
+                <td>This video discusses regulatory compliance, reputational damage, compliance monitoring, and meeting standards of laws, policies, and regulations.</td>
+                <td><input type="checkbox" id="video-5-4-1"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Privacy</td>
+                <td>5:21</td>
+                <td>Learn about legal implications, data responsibilities, and data inventory and retention related to data privacy.</td>
+                <td><input type="checkbox" id="video-5-4-2"></td>
+            </tr>
+
+            <tr>
+                <td class="section-header" colspan="5">Section 5.5 – Audits and Assessments</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Audits and Assessments</td>
+                <td>2:49</td>
+                <td>This video covers internal audits, external audits, and reasons for performing ongoing technology audits.</td>
+                <td><input type="checkbox" id="video-5-5-1"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Penetration Tests</td>
+                <td>5:29</td>
+                <td>Learn about pentesting perspectives, reconnaissance techniques, and their use in audits to gather security posture information.</td>
+                <td><input type="checkbox" id="video-5-5-2"></td>
+            </tr>
+
+            <tr>
+                <td class="section-header" colspan="5">Section 5.6 – Security Awareness</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Security Awareness</td>
+                <td>6:45</td>
+                <td>This video discusses phishing campaigns, anomalous behavior recognition, reporting options, and involving everyone in security awareness.</td>
+                <td><input type="checkbox" id="video-5-6-1"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>User Training</td>
+                <td>4:31</td>
+                <td>Learn about training methods and security education for employees, management, and third-parties.</td>
+                <td><input type="checkbox" id="video-5-6-2"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

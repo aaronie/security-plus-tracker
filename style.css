@@ -1,0 +1,77 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 20px;
+	background-color: #f4f4f4;
+	color: #333;
+}
+h1 {
+	color: #2c3e50;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.progress-container {
+	width: 90%;
+	max-width: 1200px;
+	margin: 20px auto;
+	background-color: #e0e0e0;
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+	padding: 10px;
+	text-align: center;
+}
+.progress-bar {
+	height: 25px;
+	width: 0%;
+	background-color: #4CAF50; /* Green */
+	border-radius: 3px;
+	text-align: center;
+	line-height: 25px;
+	color: white;
+	font-weight: bold;
+	transition: width 0.5s ease-in-out;
+}
+.progress-text {
+	margin-top: 10px;
+	font-size: 1.1em;
+	color: #555;
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+	background-color: #fff;
+}
+th, td {
+	border: 1px solid #ddd;
+	padding: 12px;
+	text-align: left;
+	vertical-align: top;
+}
+th {
+	background-color: #e0e0e0;
+	font-weight: bold;
+	color: #555;
+}
+tr:nth-child(even) {
+	background-color: #f9f9f9;
+}
+tr:hover {
+	background-color: #f1f1f1;
+}
+td:last-child {
+	text-align: center;
+	width: 50px; /* Adjust width for checkbox column */
+}
+input[type="checkbox"] {
+	transform: scale(1.5); /* Make checkbox larger */
+	cursor: pointer;
+}
+.section-header {
+	background-color: #dbe9f6; /* Light blue for section headers */
+	font-weight: bold;
+	color: #1a4f7d;
+	text-align: center;
+	padding: 10px;
+}
