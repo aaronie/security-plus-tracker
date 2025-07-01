@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const completedCountSpan = document.getElementById('completedCount');
     const percentageSpan = document.getElementById('percentage');
     const progressBar = document.getElementById('progressBar');
-    const totalTimeSpan = document.getElementById('totalTime'); // New
-    const timeRemainingSpan = document.getElementById('timeRemaining'); // New
+    const totalTimeSpan = document.getElementById('totalTime');
+    const timeRemainingSpan = document.getElementById('timeRemaining');
 
     // Helper function to convert MM:SS to total seconds
     function timeToSeconds(timeStr) {
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return 0; // Invalid format
     }
 
-    // Helper function to convert total seconds to HH:MM:SS
+    // Helper function to convert total seconds to HH:MM:SS (or MM:SS if no hours)
     function secondsToHms(totalSeconds) {
         const hours = Math.floor(totalSeconds / 3600);
         const minutes = Math.floor((totalSeconds % 3600) / 60);
@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    // This part remains the same: total number of videos found in the HTML
     const totalVideos = checkboxes.length;
     totalVideosSpan.textContent = totalVideos;
 
@@ -45,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Get the row for the current checkbox
             const row = checkbox.closest('tr');
             // Get the 'Run Time' cell (3rd td in the row, index 2)
-            const runTimeCell = row.children[2]; // Assuming Run Time is always the 3rd column (index 2)
+            const runTimeCell = row.children[2];
             const runTimeStr = runTimeCell ? runTimeCell.textContent.trim() : '00:00';
             const videoDuration = timeToSeconds(runTimeStr);
 
@@ -60,7 +61,11 @@ document.addEventListener('DOMContentLoaded', function() {
             localStorage.setItem(checkbox.id, checkbox.checked);
         });
 
-        const percentage = totalVideos === 0 ? 0 : (completedCount / totalVideos) * 100;
+        // --- THE KEY CHANGE IS HERE ---
+        // Calculate percentage based on time completed, not video count
+        const percentage = totalDurationSeconds === 0 ? 0 : (completedDurationSeconds / totalDurationSeconds) * 100;
+        // --- END OF KEY CHANGE ---
+
         const timeRemainingSeconds = totalDurationSeconds - completedDurationSeconds;
 
         completedCountSpan.textContent = completedCount;
@@ -68,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
         progressBar.style.width = percentage + '%';
         progressBar.textContent = percentage.toFixed(0) > 0 ? percentage.toFixed(0) + '%' : '';
 
-        // Update the new time display elements
+        // Update the time display elements
         totalTimeSpan.textContent = secondsToHms(totalDurationSeconds);
         timeRemainingSpan.textContent = secondsToHms(timeRemainingSeconds);
     }
